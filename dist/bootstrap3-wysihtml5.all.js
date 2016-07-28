@@ -12795,7 +12795,7 @@ wysihtml5.views.View = Base.extend(
         element             = this.element,
         focusBlurElement    = (browser.supportsEventsInIframeCorrectly() || this.sandbox.getContentEditable) ? element : this.sandbox.getWindow(),
         pasteEvents         = ["drop", "paste", "beforepaste"],
-        interactionEvents   = ["drop", "paste", "mouseup", "focus", "keyup"];
+        interactionEvents   = ["drop", "paste", "mouseup"/*, "focus", "keyup" */];
 
     // --------- destroy:composer event ---------
     dom.observe(container, "DOMNodeRemoved", function() {
